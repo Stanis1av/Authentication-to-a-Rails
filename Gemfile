@@ -50,3 +50,9 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+# Sending Emails
+gem 'sib-api-v3-sdk'
+gem 'addressable', '~> 2.7.0'
+gem 'roadie', '~> 4.0'
+
