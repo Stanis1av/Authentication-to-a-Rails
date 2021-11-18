@@ -52,7 +52,8 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # Sending Emails
-gem 'sib-api-v3-sdk'
-gem 'addressable', '~> 2.7.0'
-gem 'roadie', '~> 4.0'
+#=====| STEP 1. Gem additions |=========
+gem 'sib-api-v3-sdk' # Sendinblue API
+gem 'addressable', '~> 2.7.0' # 'sib-api-v3-sdk' requires the "addressable" dependency to work
+gem 'roadie', '~> 4.0' # Comfortable CSS integration with mails
 

@@ -1,5 +1,6 @@
 class UserConfirmationMailer < Devise::Mailer
-
+  #==| STEP 5. Creating UserConfirmationMailer class. |=======
+  # Responsible for sending letters with confirmation of the mailing address.
   helper :application # gives access to all helpers defined within `application_helper`.
   layout 'mailer'
   default template_path: 'users/mailer'
