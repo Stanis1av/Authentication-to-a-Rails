@@ -1,13 +1,16 @@
 class UserMailer < Devise::Mailer
+  #==| STEP 5. Creating UserConfirmationMailer class. |=======
+  # Responsible for sending letters with confirmation of the mailing address.
 
   include UserMailerHelper # gives access to UserMailerHelper helper
 
   helper :application
   layout 'mailer'
+  before_action :init
 
   default template_path: 'users/mailer'
 
-  def initialize
+  def init
     @send_email = SibApiV3Sdk::TransactionalEmailsApi.new # api instance
     @mail_letter = SibApiV3Sdk::SendSmtpEmail.new # SendSmtpEmail | Values to send a transactional email
   end
