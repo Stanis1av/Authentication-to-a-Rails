@@ -28,7 +28,7 @@ Devise.setup do |config|
 
   #==| STEP 3. Configure the class responsible to send e-mails. |====
   # config.mailer = 'Devise::Mailer'
-  config.mailer = 'UserConfirmationMailer' # <= step 3. Necessarily
+  config.mailer = 'UserMailer' # <= STEP 3. Necessarily
 
   # Configure the parent class responsible to send e-mails.
   # config.parent_mailer = 'ActionMailer::Base'
